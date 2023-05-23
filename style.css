@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    margin: 40px 40px 0px 40px;
+}
+
+
+.header__new_container{
+    width: 94px;
+    height: 26px;
+    background-color: #FFDD2D;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header__inscription{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.header__title{
+    text-align: start;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.header__avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #F1F3F5;
+    margin-bottom: 12px;
+}
+
+.hashtags__container{
+    margin-bottom: 40px;
+}
+
+.hashtags__title{
+    color: #808C9E;
+    margin-bottom: 8px;
+}
+
+.hashtags__hashtag{
+    margin-bottom: 12px;
+    width: max-content;
+    color: #808C9E;
+    background: #F1F3F5;
+}
+
+.hashtags__hashtag:last-child{
+    margin-bottom: 0;
+}
+
+.article{
+    margin: 0px 40px 0px 40px;
+}
+
+.article__title{
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.article__title_link{
+    margin-bottom: 0;
+}
+
+.article__link{
+    display: block;
+    width: max-content;
+    color: #597DB3;
+    text-decoration: none;
+    font-weight: 400;
+font-size: 21px;
+line-height: 28px;
+}
+
+.article__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 3px;
+    opacity: 0.2;
+    border-bottom: 1px solid #336FEE;
+  }
+.article__text{
+margin-bottom: 16px;
+}
+
+.article__big_margin{
+    margin-top: 36px;
+}
+
+.author{
+    margin: 28px 40px 38px 40px;
+}
+
+.author__container{
+    display: flex;
+    margin-bottom: 36px;
+}
+
+.author__name{
+    font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+}
+.author__text{
+    line-height: 20px;
+    width: min-content;
+    color: #808C9E;
+    
+}
+
+.author__image{
+    margin-right: 16px;
+}
+
+.author__editor{
+    line-height: 20px;
+    color: #808C9E;
+    font-size: 15px;
+    margin-bottom: 8px;
+    
+}
+
+.author__link{
+    text-decoration: none;
+    color: #597DB3;
+    line-height: 20px;
+    font-size: 15px;
+    width: max-content;
+    display: block;
+}
+
+.article__main{
+    margin-bottom: 12px;
+}
+
+.author__link::after {
+    content: "";
+    display: block;
+    padding-top: 3px;
+    opacity: 0.2;
+    border-bottom: 1px solid #336FEE;
+  }
+
+  .header__container{
+    display: block;
+
+  }
+
+  .hashtags__container{
+    display: block;
+  }
+
+  .header__container_text{
+    width: 75%;
+  }
+
+  .article__container{
+    display: block;
+  }
+
+  .author__container_bio{
+    display: block
+  }
+
+  @media screen and (min-width:768px) {
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    header{
+        margin: 50px 128px 0px 128px;
+    }
+
+    .hashtags__container{
+        display: flex;
+    }
+
+    .hashtags__hashtag:not(:last-child){
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+    .hashtags__container{
+        margin-bottom: 48px;
+        height: 24px;
+    }
+
+    .article{
+        margin: 0px 128px 0px 128px;
+    }
+    
+    .article__container{
+        display: flex;
+    }
+
+    .author{
+        margin: 30px 128px 48px 128px;
+    }
+
+    .author__text{
+        width: 60%;
+    }
+
+    .author__container_bio{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article__main{
+        margin-bottom: 48px;
+    }
+    
+    .article__big_margin{
+        margin-top: 48px;
+    }
+  }
+
+  @media screen and (min-width:1024px) {
+    *{
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .header__title{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .article__title{
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .article__link{
+            font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    }
+   
+  }
